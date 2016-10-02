@@ -1,0 +1,190 @@
+<!--
+	The box has a fixed size so far, but is somewhat responsive. Although if you wanna add more link columns, you'll need to adjust the box widths appropiatly.
+
+	Uses Flexbox. Doesn't run with some older browsers like < IE11.
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+	 				🍙
+	</title>
+
+	<!--
+	        .---------------.
+	       /MMMMMMMdbMMMMMMMM\
+	       /MMMMMMMdbMMMMMMMM\
+	       /MMMMMMMdbMMMMMMMM\
+	        /MMMMMMdbMMMMMMMM\
+	        /MMMMMMdbMMMMMMM\
+	        /MMMMMMbdMMMMMMM\
+	/MMMM   MMMMMMMb dMMMMMMM. ,MM
+	/MMMM  MMMMMMMMb dMMMMMMMM\ `MM
+	.MMMMMMMMMMMMMM`  `\MMMMMMM.MMb
+	  `MMMMMMMMMM´       `MMMMMMMb
+	   `--------´         `------´
+	-->
+
+	<!-- META -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1.0">
+	<link rel="shortcut icon" href="favicon.png">
+
+		<style>
+		@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+		@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+		body {
+			background: #95b0db;
+			font-family: 'Roboto';
+			color: white;
+			}
+		body::after {
+			content: "";
+			background: url('http://i.imgur.com/StzzYPF.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			opacity: 0.12;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+			z-index: -1;
+		}
+		h1 {
+			font-size: 3.4em;
+			font-weight: 200;
+			font-family: 'Noto Sans', serif;
+			text-align: center;
+			margin: 0;
+			margin-top: 20px;
+			padding: 0;
+			text-transform: uppercase;}
+		h2 {
+			font-size: 1.3em;
+		}
+		ul {
+			list-style: none;
+			-webkit-flex: 1 auto;
+			flex: 1 auto;
+		}
+		li {
+			font-size: 1.1em;
+			font-weight: 300;
+			margin: 12px 0;
+		}
+		a:link, a:visited, a:focus {
+			color: white;
+			text-decoration: none;
+		}
+		a:hover {
+			color: #816F90;
+			font-weight: 300;
+			border-bottom: 1px dotted #816F90;
+		}
+		.box {
+			margin-top: 0px;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-flow: row wrap;
+			flex-flow: row wrap;
+		}
+		.wrapper {
+			margin: auto;
+			width: 800px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			height: 530px;
+			border: 1px solid rgba(255,255,255,0.41);
+			background: rgba(255,255,255,0.11);}
+		@media only screen and (max-width: 840px) {
+			h1 {
+				font-size: 2.5em;
+			}
+			.wrapper {
+				width: 462px;
+				height: 833px;
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
+			body::after {
+				background: url('http://i.imgur.com/dI1EURb.jpg');
+				background-size: 100% 100%;
+				height: 800px;
+		}
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="main">
+		<div class="wrapper">
+			<h1>美少女戦士セーラームーン</h1>
+			<div class="box">
+				<ul>
+					<li><h2>Information</h2></li>
+					<li><a href="https://www.w3.org/" target="_blank">W3C</a></li>
+						<li><a href="https://fcps.blackboard.com/" target="_blank">Blackboard</a></li>
+					<li><a href="https://news.ycombinator.com/" target="_blank">Hacker News</a></li>
+					<li><a href="https://reddit.com/" target="_blank">Reddit</a>
+						<ul>
+							<li><a href="https://www.reddit.com/r/webdev+web_design+css+devops+php+javascript+web_work+webhosting+freelance+html+html5+sass+angular2+digitalnomad/top/?sort=top&t=week" target="_blank">/webdev/</a></li>
+							<li><a href="https://www.reddit.com/r/CompetitiveHS/" target="_blank">/compHS/</a></li>
+							<li><a href="https://www.reddit.com/r/unixporn" target="_blank">/unixporn/</a></li>
+						</ul>
+					</li>
+					<li><a href="https://4chan.org/" target="_blank">4chan</a>
+					<ul>
+						<li><a href="https://boards.4chan.org/g/catalog" target="_blank">/g/</a></li>
+						<li><a href="https://boards.4chan.org/gd/catalog" target="_blank">/gd/</a></li>
+						</ul>
+					</li>
+
+				</ul>
+				<ul>
+					<li><h2>Organisation</h2></li>
+					<li><a href="https://github.com" target="_blank">GitHub</a></li>
+					<li><a href="https://www.evernote.com/Home.action" target="_blank">Evernote</a></li>
+					<li><a href="https://inbox.com/" target="_blank">Inbox</a></li>
+					<li><a href="https://calendar.google.com/calendar/render#main_7" target="_blank">Calendar</a></li>
+					<li><h2>Other Tools</h2></li>
+					<!--
+					<li><a href="https://getpocket.com/a/queue/list/" target="_blank">Pocket</a></li>
+					<li><a href="https://trello.com" target="_blank">Trello</a></li>
+					<li><a href="https://www.duolingo.com/" target="_blank">Duolingo</a></li>
+					<li><a href="https://jakearchibald.github.io/svgomg/" target="_blank">Codepen</a></li>-->
+					<li><a href="https://slack.com/signin" target="_blank">Slack</a></li>
+					<li><a href="https://web.skype.com/" target="_blank">Skype</a></li>
+
+				</ul>
+				<ul>
+				<li><h2>Social Media</h2></li>
+					<!-- <li><a href="https://xing.com" target="_blank">XING</a></li>
+					<li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
+					<li><a href="https://behance.net" target="_blank">Behancé</a></li>
+					-->
+					<li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+					<li><a href="https://facebook.com/" target="_blank">Facebook</a></li>
+
+
+
+
+					<li><h2>Entertainment</h2></li>
+                    <li><a href="https://play.spotify.com/browse" target="_blank">Spotify</a></li>
+					<li><a href="https://www.twitch.tv/directory/game/Creative/all" target="_blank">Twitch.tv</a></li>
+					<li><a href="https://www.youtube.com/feed/subscriptions" target="_blank">YouTube</a></li>
+					<li><a href="http://www.colourlovers.com/" target="_blank">Colourlovers</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>
